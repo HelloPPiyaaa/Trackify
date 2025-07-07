@@ -1,0 +1,21 @@
+POST http://localhost:5000/api/users/register
+Content-Type: application/json
+
+{
+    "fullname": "Piyarat Upacheewa",
+    "email": "piyarat45443@gmail.com",
+    "password": "Jungkook1997",
+    "confirmPassword": "Jungkook1997"
+}
+
+# POST http://localhost:5000/api/users/login
+# Content-Type: application/json
+
+# {
+#     "email": "piyarat4543@gmail.com",
+#     "password": "Jungkook1997"
+# }
+
+# GET http://localhost:5000/api/projects/686a4a96f39f598897d58c40
+
+

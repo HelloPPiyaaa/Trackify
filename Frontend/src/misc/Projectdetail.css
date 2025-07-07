@@ -1,0 +1,21 @@
+.des-detail {
+  margin: 1rem 0;
+}
+
+.add-issue {
+  background: #7380ec;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-project {
+  background: #ff7782;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,307 @@
+.side {
+  font-size: 1.8rem;
+  width: max-content;
+  height: 100vh;
+  font-size: 0.88rem;
+  background: #f6f6f9;
+  user-select: none;
+  color: #363949;
+  border-radius: 15px;
+}
+
+nav .contain {
+  width: 14rem;
+  margin-left: 2rem;
+}
+
+nav aside > .sidebar > a {
+  display: flex;
+  color: #7d8da1;
+  text-decoration: none;
+  font-size: 14px auto 23rem;
+}
+
+nav .top > .logo > img {
+  display: block;
+  width: 100%;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+nav .sidebar > a > h3 {
+  font-size: 0.87rem;
+  font-weight: bold;
+}
+
+.profile-photo {
+  margin-top: 15px;
+}
+
+.profile-photo > img {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+nav .text-muted1 {
+  color: var(--color-dark);
+}
+
+nav .primary {
+  color: #7380ec;
+}
+
+nav .danger {
+  color: #ff7782;
+}
+
+nav .success {
+  color: #41f1b6;
+}
+
+nav .warning {
+  color: #ffbb55;
+}
+
+nav small {
+  font-size: 0.75rem;
+}
+/* 
+nav aside {
+  height: 100vh;
+} */
+
+nav aside .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.4rem;
+}
+
+nav aside .logo {
+  display: flex;
+  gap: 0.8rem;
+}
+
+nav aside #close {
+  display: none;
+}
+
+nav aside .sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 78vh;
+  position: relative;
+  top: 3rem;
+}
+
+nav aside h3 {
+  font-weight: 500;
+}
+
+nav aside > .sidebar > a {
+  display: flex;
+  color: #7d8da1;
+  margin-left: 2rem;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  height: 3.7rem;
+  transition: all 300ms ease;
+}
+
+nav aside .sidebar a svg {
+  font-size: 1.6rem;
+  transition: all 300ms ease;
+}
+
+nav aside .sidebar a:last-child {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+
+nav aside .sidebar a.active {
+  background: rgba(132, 139, 200, 0.18);
+  color: #7380ec;
+  margin-left: 0;
+}
+
+nav aside .sidebar a.active::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: #7380ec;
+}
+
+nav aside .sidebar a.active svg {
+  color: #7380ec;
+  margin-left: calc(1rem - 3px);
+}
+
+nav aside .sidebar a:hover {
+  color: #7380ec;
+}
+
+nav aside > .sidebar > a:hover > svg {
+  margin-left: 1rem;
+}
+
+.profile-theme {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#menu-btn {
+  display: none;
+}
+
+nav .profile .info {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  nav .content-container {
+    flex-grow: 1;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+
+  .contain {
+    width: 94%;
+    grid-template-columns: 7rem auto;
+  }
+
+  aside .logo h2 {
+    display: none;
+  }
+
+  .top > .logo > img {
+    display: block;
+    width: 100%;
+    margin-top: -20px;
+  }
+
+  aside .sidebar h3 {
+    display: none;
+  }
+
+  aside .sidebar a {
+    width: 5.6rem;
+  }
+
+  aside .sidebar a:last-child {
+    position: relative;
+    margin-top: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-container .contain {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  nav aside {
+    position: fixed;
+    left: -100%;
+    background: var(--color-white);
+    width: 18rem;
+    z-index: 3;
+    box-shadow: 1rem 3rem 4rem rgba(132, 139, 200, 0.18);
+    height: 100vh;
+    padding-right: 1.8rem;
+    display: none;
+    animation: showMenu 400ms ease forwards;
+  }
+
+  @keyframes showMenu {
+    to {
+      left: 0;
+    }
+  }
+
+  nav aside .logo {
+    margin-left: 1rem;
+  }
+
+  nav .top > .logo > img {
+    display: block;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  nav aside .logo h2 {
+    display: inline;
+  }
+
+  nav aside .sidebar h3 {
+    display: inline;
+  }
+
+  nav aside .sidebar a {
+    width: 100%;
+    height: 3.4rem;
+  }
+
+  nav aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 5rem;
+  }
+
+  aside #close {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  nav .header-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 0.8rem;
+    height: 4.6rem;
+    background: #f6f6f9;
+    width: 100%;
+    margin: 2px 2px;
+    z-index: 2;
+    box-shadow: 0 1rem 1rem rgba(132, 139, 200, 0.18);
+  }
+
+  .title-container {
+    margin-left: 3.5rem;
+  }
+
+  nav .header-content .title-container h1 {
+    font-size: 1.4rem;
+  }
+
+  nav #menu-btn {
+    display: block;
+    position: absolute;
+    left: 1rem;
+    font-size: 2rem;
+  }
+
+  nav .profile .info {
+    display: none;
+  }
+
+  .content-container {
+    margin-top: 0.5rem;
+  }
+}
+.auth-button {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}

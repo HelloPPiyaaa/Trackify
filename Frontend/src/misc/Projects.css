@@ -1,0 +1,76 @@
+.date-project .add-projects {
+  background: #7380ec;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  color: white;
+  cursor: pointer;
+}
+
+.date-project .add-projects:hover {
+  background: white;
+  color: #7380ec;
+  border: 1px solid #7380ec;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* มากพอ */
+}
+
+.custom-modal {
+  background-color: white;
+  color: black;
+  width: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  position: relative;
+}
+
+.create-project-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.create-project-form input,
+.create-project-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.create-project-form button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-project-form button:hover {
+  background-color: #0056b3;
+}
+
+.close-button {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}

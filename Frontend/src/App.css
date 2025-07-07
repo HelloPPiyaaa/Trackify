@@ -1,0 +1,13 @@
+.layout {
+  display: flex;
+  height: 100vh; /* เต็มหน้าจอ */
+  overflow: hidden;
+}
+
+.scrollable-content {
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #f6f6f9;
+}
